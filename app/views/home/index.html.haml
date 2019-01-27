@@ -1,1 +1,4 @@
-=link_to "Admin", new_user_session_path
+= link_to "Admin", new_user_session_path
+
+- if user_signed_in?
+  %p= "Hello #{current_user.name}, have a good day."
